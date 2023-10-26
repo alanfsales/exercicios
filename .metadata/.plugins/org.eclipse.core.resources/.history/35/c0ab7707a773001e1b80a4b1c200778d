@@ -1,0 +1,34 @@
+package exercicios.beecrowd;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner input = new Scanner(System.in);
+		
+		String dados = input.nextLine();
+		
+		String[] numeros = dados.split(" ");
+		
+		double A = Double.parseDouble(numeros[0]);
+		double B = Double.parseDouble(numeros[1]);
+		double C = Double.parseDouble(numeros[2]);
+		
+		double delta, R1, R2 = 0;
+		
+		delta = (B * B) + (-4 * (A * C));
+		
+		if(delta > 0 ) {
+			R1 = (-(B) + Math.sqrt(delta)) / 2 * A;
+			R2 = (-(B) - Math.sqrt(delta)) / 2 * A;
+			System.out.println("R1 = " + R1);
+			System.out.println("R2 = " + R2);
+		}else {
+			System.out.println("Impossivel calcular");
+		}
+		input.close();
+	}
+}
