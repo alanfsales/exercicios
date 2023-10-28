@@ -1,0 +1,25 @@
+package exercicios.beecrowd;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SortSimples1042 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		String dados = input.nextLine();
+		String[] numerosString = dados.split(" ");
+		List<Integer> numeros = new ArrayList<>();
+		
+		for (int x = 0; x < numerosString.length; x++) {
+			numeros.add(Integer.parseInt(numerosString[x]));
+		}
+		
+		System.out.println(numeros);
+		
+		input.close();
+	}
+}

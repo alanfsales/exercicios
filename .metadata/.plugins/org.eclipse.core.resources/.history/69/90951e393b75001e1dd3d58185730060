@@ -1,0 +1,23 @@
+package exercicios.beecrowd;
+
+import java.util.Scanner;
+
+public class SortSimples1042 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		
+		String dados = input.nextLine();
+		String[] numerosString = dados.split(" ");
+		int[] numeros = {};
+		
+		for (int x = 0; x < numerosString.length; x++) {
+			numeros[x] = Integer.parseInt(numerosString[x]);
+		}
+		
+		System.out.println(numeros.length);
+		
+		input.close();
+	}
+}
