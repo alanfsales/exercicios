@@ -6,7 +6,8 @@ public class Main {
 //		System.out.println(isogram.isIsogram("moOse"));
 //		System.out.println(Kata.reverseWords("[<   >]"));
 //		System.out.println(new Solution().solution(10));
-		System.out.println(new Solution2().toCamelCase("the-stealth-warrior"));
+		System.out.println(new Solution2().toCamelCase("The_Stealth-Warrior"));
+//		System.out.println(new BitCounting().countBits(1234));
 		
 	}
 
